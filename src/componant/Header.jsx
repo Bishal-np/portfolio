@@ -24,7 +24,7 @@ function Header() {
     <>
 
 
-      <header className={`navbar navbar-expand-lg py-5 bg-body-dark ${isScrolled ? 'scrolled' : ''}`}>
+      <header className={`navbar navbar-expand-lg py-3 bg-body-dark ${isScrolled ? 'scrolled' : ''}`}>
         
         <div className="container">
 
@@ -33,7 +33,7 @@ function Header() {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className='d-flex ms-auto gap-4 align-items-center menu-items'>
+          <ul className='d-flex mb-0 ms-auto gap-4 align-items-center menu-items'>
             <li><a href={`#home`}>Home</a></li>
             <li><a href={`#about`}>Who I Am</a></li>
             <li><a href={`#services`}>What I Offer</a></li>
