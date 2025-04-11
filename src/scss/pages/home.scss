@@ -2,32 +2,68 @@
   background-color: var(--primary-color);
   .banner {
     padding-top: 100px;
-    @media (max-width:991px) {
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    @media (max-width:576p) {
       flex-direction: column;
       
     }
     .banner-details {
-      @media (max-width:991px) {
-  text-align: center;
+      @media (max-width: 991px) {
+        text-align: center;
         
       }
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+      @media (max-width:576p) {
+        text-align: center;
+        
+      }
+
       .heading {
         font-size: 70px;
         font-weight: 600;
         line-height: 88px;
         color: #ffffff;
-        @media (max-width:480px) {
+
+        @media (max-width: 991px) {
+          font-size: 50px;
+          font-weight: 500;
+          line-height: 34px;
+        }
+        @media (max-width: 768px) {
+           font-size: 50px;
+          font-weight: 500;
+          line-height: 34px;
+        }
+        @media (max-width: 576px) {
           font-size: 30px;
-          font-weight: 600;
-          line-height: 44px;
-                
-              }
+         font-weight: 500;
+         line-height: 18px;
+         margin-top: 30px;
+       }
       }
       .sub-heading {
         font-size: 23px;
         font-weight: 400;
         line-height: 34px;
         color: #a4a1a1;
+        @media (max-width: 991px) {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 34px;
+        }
+        @media (max-width: 576px) {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 15px;
+          margin-top: 10px;
+        }
       }
       .hire-me {
         padding: 20px 60px;
@@ -38,11 +74,40 @@
         margin-top: 50px;
         border-radius: 3px;
         background-color: var(--secondary-color);
+        @media (max-width: 991px) {
+          padding: 10px 30px;
+          color: white;
+          border: none;
+          letter-spacing: 1px;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 100px;
+          border-radius: 3px;
+          background-color: var(--secondary-color);
+        }
+        @media (max-width: 576px) {
+          padding: 5px 10px;
+          color: white;
+          border: none;
+          font-size: 10px;
+          margin-top: 5px;
+          margin-bottom: 100px;
+          border-radius: 3px;
+          background-color: var(--secondary-color);
+        }
       }
       .hire-me:hover {
         background-color: var(--primary-color);
         border: 1px var(--secondary-color) solid;
         color: var(--secondary-color);
+      }
+    }
+    .banner-picture {
+      @media (max-width: 991px) {
+        height: 300px;
+      }
+      @media (max-width: 576px) {
+        height: 250px;
       }
     }
   }
@@ -51,35 +116,63 @@
   background-color: var(--primary-color);
   padding-top: 80px;
 
-  
-
   h2 {
-    
     font-weight: 700;
     justify-content: center;
     text-align: center;
     font-size: 40px;
     color: rgb(181, 178, 178);
-   
+    @media (max-width: 991px) {
+      font-size: 25px;
+    }
+    @media (max-width: 576px) {
+      font-size: 25px;
+    }
   }
-  .contact-p{
+  .contact-p {
     font-size: 15px;
     color: rgb(173, 169, 169);
     letter-spacing: 1px;
+    @media (max-width: 991px) {
+      font-size: 12px;
+      color: rgb(173, 169, 169);
+      letter-spacing: 1px;
+
+    }
+    @media (max-width: 576px) {
+      font-size: 10px;
+      color: rgb(173, 169, 169);
+      letter-spacing: 1px;
+
+    }
   }
   .contact-card {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin-top: 50px;
+    @media (max-width: 991px) {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+    }
+    @media (max-width: 576px) {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+    }
 
-    .contact-p{
+    .contact-p {
       font-size: 20px;
     }
 
     .contact-info {
       margin-top: 10px;
       width: 50%;
+      @media (max-width: 991px) {
+        display: none;
+      }
       h3 {
         font-size: 22px;
         color: rgb(156, 151, 151);
@@ -87,7 +180,7 @@
         text-align: left;
         margin-bottom: 37px;
       }
-      .follow{
+      .follow {
         margin-right: 25px;
       }
 
@@ -117,41 +210,68 @@
   .contact-form {
     width: 750px;
     border-radius: 2px;
-    text-align: left;
-  
+    @media (max-width: 991px) {
+      width: 500px;
+    }
+    @media (max-width: 576px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    div {
+      .name {
+        width: 100%;
+        padding: 20px;
+        background-color: #303131;
+        border: none;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        border-radius: 10px;
+        @media (max-width:576px) 
+        {
+          width: 100%;
+          padding: 10px;
+          background-color: #303131;
+          border: none;
+          color: white;
+          font-size: 10px;
+          outline: none;
+          border-radius: 10px;
+        }
+      }
+      .number {
+        width: 100%;
+        padding: 20px;
+        background-color: #303131;
+        border: none;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        margin-top: 10px;
+        border-radius: 10px;
+        @media (max-width:576px) {
+          padding: 10px;
+          font-size: 10px;
+        }
+      }
+      .email {
+        width: 100%;
+        padding: 20px;
+        background-color: #303131;
+        border: none;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        margin-top: 10px;
+        border-radius: 10px;
+        @media (max-width:576px) {
+          padding: 10px;
+          font-size: 10px;
+          
+        }
+      }
+    }
 
-    .name {
-      width: 100%;
-      padding: 20px;
-      background-color: #303131;
-      border: none;
-      color: white;
-      font-size: 15px;
-      outline: none;
-      border-radius: 10px;
-    }
-    .number{
-      width: 100%;
-      padding: 20px;
-      background-color: #303131;
-      border: none;
-      color: white;
-      font-size: 15px;
-      outline: none;
-      margin-top: 10px;
-      border-radius: 10px;
-    }
-    .email{
-      width: 100%;
-      padding: 20px;
-      background-color: #303131;
-      border: none;
-      color: white;
-      font-size: 15px;
-      outline: none;
-      margin-top: 10px;
-      border-radius: 10px;
-    }
     .message {
       margin-top: 10px;
       .message-area {
@@ -165,6 +285,11 @@
         height: 200px;
         outline: none;
         border-radius: 10px;
+        @media (max-width:576px) {
+         height: 60px;
+         font-size: 10px;
+          
+        }
       }
     }
 
@@ -180,6 +305,11 @@
       font-weight: 500;
       margin-bottom: 100px;
       cursor: pointer;
+      @media (max-width:576px) {
+        padding:5px 10px ;
+        font-size: 10px;;
+        
+      }
     }
 
     .send-message:hover {
@@ -191,14 +321,35 @@
 .about-section {
   background-color: #303131;
   height: 500px;
+  @media (max-width: 991px) {
+    height: 700px;
+  }
 
   .about-section-1 {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    .about-heading{
+    @media (max-width: 991px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-heading {
       font-size: 45px;
       font-weight: 500;
+      @media (max-width: 991px) {
+        font-size: 35px;
+        padding-right: 80px;
+        font-weight: 500;
+      }
+      @media (max-width: 576px) {
+        font-size: 25px;
+        padding-right: 80px;
+        font-weight: 500;
+      }
     }
 
     h2 {
@@ -208,12 +359,37 @@
       color: rgb(170, 167, 167);
       margin-top: 200px;
       margin-left: 100px;
+      @media (max-width: 991px) {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: rgb(170, 167, 167);
+        margin-top: 70px;
+        margin-left: 100px;
+      }
+      @media (max-width: 576px) {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: rgb(170, 167, 167);
+        margin-top: 70px;
+       
+      }
     }
 
     .about {
       width: 600px;
       margin: 30px;
-
+      @media (max-width: 991px) {
+        display: block;
+        width: 500px;
+        margin-left: 100px;
+      }
+      @media (max-width: 991px) {
+        display: block;
+        width: 350px;
+        margin-left: 110px;
+      }
 
       p {
         color: rgb(133, 131, 131);
@@ -221,44 +397,71 @@
         text-align: left;
         font-size: 15px;
         letter-spacing: 1px;
+        @media (max-width: 991px) {
+          color: rgb(133, 131, 131);
+          margin-top: 10px;
+          text-align: center;
+          font-size: 13px;
+        }
+        @media (max-width: 576px) {
+          color: rgb(133, 131, 131);
+          text-align: center;
+          font-size: 12px;
+        }
       }
 
-      .view-work {
-        background-color: var(--secondary-color);
-        padding: 20px 50px;
-        border-radius: 3px;
-        border: none;
-        color: white;
-        font-size: 18px;
-        letter-spacing: 1px;
-        margin-right: 20px;
-        cursor: pointer;
-      }
+      div {
+        @media (max-width: 991px) {
+          display: flex;
+        }
+        @media (max-width: 576px) {
+          display: flex;
+          gap: 100px;
+        }
+        .view-work {
+          background-color: var(--secondary-color);
+          padding: 20px 50px;
+          border-radius: 3px;
+          border: none;
+          color: white;
+          font-size: 18px;
+          letter-spacing: 1px;
+          margin-right: 20px;
+          cursor: pointer;
+          @media (max-width: 576px) {
+            padding: 10px 20px;
+            font-size: 10px;
+          }
+        }
 
-      .view-work:hover {
-        border: 2px var(--secondary-color) solid;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        cursor: pointer;
-       
-      }
+        .view-work:hover {
+          border: 2px var(--secondary-color) solid;
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          cursor: pointer;
+        }
 
-      .download-cv {
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        border: 2px var(--secondary-color) solid;
-        padding: 20px 38px;
-        border-radius: 3px;
-        font-size: 18px;
-        letter-spacing: 1px;
-        margin-right: 160px;
-        margin-top: 20px;
-      }
+        .download-cv {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          border: 2px var(--secondary-color) solid;
+          padding: 20px 50px;
+          border-radius: 3px;
+          font-size: 18px;
+          letter-spacing: 1px;
+          margin-right: 160px;
+          margin-top: 20px;
+          @media (max-width:576px) {
+            padding: 10px;
+            
+          }
+        }
 
-      .download-cv:hover {
-        background-color: var(--secondary-color);
-        border: none;
-        color: white;
+        .download-cv:hover {
+          background-color: var(--secondary-color);
+          border: none;
+          color: white;
+        }
       }
     }
   }
@@ -267,21 +470,50 @@
 .services {
   background-color: var(--primary-color);
   .services-section {
-    .srv-heading{
+   
+    .srv-heading {
       font-size: 45px;
       color: rgb(173, 171, 171);
+      @media (max-width:576px) {
+        font-size: 25px;
+        
+      }
     }
-    .service-sub-heading{
+    .service-sub-heading {
       color: rgb(138, 136, 136);
+      @media (max-width:576px) {
+        font-size: 13px;
+        width: 80%;
+        margin: 0 auto;
+        
+      }
     }
     .card {
+      @media (max-width:576px) {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+        
+      }
+      
       .card-body {
         padding: 50px;
+        @media (max-width:576px) {
+          padding: 60px;
+          
+        }
         .icon {
           font-size: 50px;
           color: rgb(9, 9, 182);
           padding-left: 30px;
           margin-top: 20px;
+          @media (max-width:576px) {
+            font-size: 40px;
+          color: rgb(9, 9, 182);
+          text-align: center;
+          margin-top: 20px;
+            
+          }
         }
         .card-heading {
           padding-left: 30px;
@@ -289,23 +521,49 @@
           font-size: 32px;
           font-weight: 600;
           line-height: 38px;
-         
+          @media (max-width:576px) {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: 600;
+    
+          }
         }
         .card-dec {
           padding-left: 30px;
           color: rgb(222, 217, 217);
+          @media (max-width:576px) {
+            text-align: center;
+            color: rgb(222, 217, 217);
+            font-size: 12px;
+          }
         }
         .card-dec-1 {
           padding-left: 30px;
           color: rgb(222, 217, 217);
+          @media (max-width:576px) {
+            text-align: center;
+            color: rgb(222, 217, 217);
+            font-size: 12px;
+          }
         }
         .card-dec-2 {
           padding-left: 30px;
           color: rgb(222, 217, 217);
+          @media (max-width:576px) {
+            text-align: center;
+            color: rgb(222, 217, 217);
+            font-size: 12px;
+          }
         }
         .card-dec-3 {
           padding-left: 30px;
           color: rgb(222, 217, 217);
+          @media (max-width:576px) {
+            text-align: center;
+            color: rgb(222, 217, 217);
+            font-size: 12px;
+          }
         }
       }
     }

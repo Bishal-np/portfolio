@@ -25,12 +25,15 @@ function Contact() {
                         </div>
                     </div>
                     <form action="" className="contact-form">
-                        <input type="text" id="name" placeholder="  Full Name" required className="name" />
-                        <input type="number" id='number' placeholder=' Phone Number' required className='number' />
-                        <input type="email" id='email' placeholder=' Email Address ' required className='email' />                  
-                        <div className="message">
-                            <textarea name="message" id="message" className="message-area" placeholder="Type your message here"></textarea>
+                        <div>
+                            <input type="text" id="name" placeholder="  Full Name" required className="name" />
+                            <input type="number" id='number' placeholder=' Phone Number' required className='number' />
+                            <input type="email" id='email' placeholder=' Email Address ' required className='email' />
+                            <div className="message">
+                                <textarea name="message" id="message" className="message-area" placeholder="Type your message here"></textarea>
+                            </div>
                         </div>
+
                         <button className="send-message">send message</button>
                     </form>
                 </div>
