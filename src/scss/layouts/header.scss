@@ -2,30 +2,29 @@ header {
   background-color: var(--primary-color);
   position: sticky;
   top: 0;
-  .nav-item{
-    .nav-menu{
-        .logo {
-            font-size: 30px;
-            font-weight: 700;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-          }
-          nav {
-            .menu-items {
-              color: rgba(255, 255, 255, 0.952);
-              font-weight: 500;
-              font-size: 14px;
-              li {
-                a {
-                  &:hover {
-                    color: #e7aa25;
-                  }
-                }
+  .nav-item {
+    .nav-menu {
+      .logo {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+      }
+      nav {
+        .menu-items {
+          color: rgba(255, 255, 255, 0.952);
+          font-weight: 500;
+          font-size: 14px;
+          li {
+            a {
+              &:hover {
+                color: #e7aa25;
               }
             }
           }
+        }
+      }
     }
-         
   }
 
   .ham-bar {
@@ -41,7 +40,7 @@ header {
     }
   }
 }
-.scrolled{
+.scrolled {
   background-color: #252525;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);}
-
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
