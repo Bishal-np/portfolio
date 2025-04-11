@@ -9,8 +9,8 @@ function Services() {
                     <p className='text-center service-sub-heading pb-5'>
                         Modern, responsive front-end development using React.js for fast, scalable web applications and custom WordPress design and development, from sleek themes to seamless functionality
                     </p>
-                    <div className="row row-cols-1 row-cols-md-2 g-4">
-                        <div className="col">
+                    <div className="row gy-4">
+                        <div className="col-lg-6 col-md-12">
                             <div className="card border-0 ">
                                 <div className="card-body text-bg-success">
                                     <div className=' icon'>
@@ -21,7 +21,7 @@ function Services() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col-lg-6 col-md-12">
                             <div className="card ">
                                 <div className="card-body text-bg-warning">
                                     <div className=' icon'>
@@ -32,7 +32,7 @@ function Services() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col-lg-6 col-md-12">
                             <div className="card border-0">
                                 <div className="card-body text-bg-primary">
                                     <div className=' icon'>
@@ -43,7 +43,7 @@ function Services() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col-lg-6 col-md-12">
                             <div className="card border-0">
                                 <div className="card-body text-bg-danger">
                                     <div className=' icon'>

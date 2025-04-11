@@ -12,7 +12,6 @@ function Banner() {
           <div className="banner-details">
             <h1 className='heading'>I'm Bishal</h1>
 
-
             <p className='sub-heading'>
              Front End Developer | Wordpress Designer Freelancer
             </p>
