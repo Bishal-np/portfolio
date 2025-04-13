@@ -23,8 +23,6 @@ function Header() {
 
   return (
     <>
-
-
       <header className={`navbar navbar-expand-lg py-4 bg-body-dark ${isScrolled ? 'scrolled' : ''}`}>
 
         <div className="container">

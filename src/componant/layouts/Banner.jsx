@@ -5,16 +5,27 @@ import Logo from "../../assets/banner.png"
 
 
 function Banner() {
+  const text = document.querySelector(".sec-text");
+  const textLoad = () => {
+    setTimeout(() => {
+      text.textContent = "Front End Developer";
+    }, 0);
+
+  }
+  textLoad();
+
+
   return (
     <>
       <section className="banner-section  " id='banner'>
         <div className="container d-flex gap-4 justify-content-between banner align-items-center">
           <div className="banner-details">
-            <h1 className='heading'>I'm Bishal</h1>
+            <h1 className='heading'> Hey, I'm Bishal</h1>
 
-            <p className='sub-heading'>
-             Front End Developer | Wordpress Designer Freelancer
-            </p>
+            <div className="animated-text">
+              <span className=" text first-text">I'm</span>
+              <span className="text sec-text"></span>
+            </div>
             <button className='hire-me'>Hire Me</button>
           </div>
           <div className="banner-picture">
