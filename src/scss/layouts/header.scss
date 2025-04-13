@@ -1,14 +1,30 @@
 header {
   background-color: var(--primary-color);
-  
-
   .logo {
     font-size: 30px;
     font-weight: 700;
     color: var(--secondary-color);
   }
-
+.navbar-toggler{
+  border: none;
+  .navbar-toggler-icon{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+ 
+}
+@media (max-width:576px) {
+  ul{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: rgb(63, 61, 61);
+  }
   
+}
+
   .menu-items {
     color: rgba(255, 255, 255, 0.952);
     font-weight: 500;
@@ -21,6 +37,8 @@ header {
       }
     }
   }
+
+ 
 }
 
 .scrolled {

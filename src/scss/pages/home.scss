@@ -410,37 +410,6 @@
         }
       }
 
-      div {
-        @media (max-width: 991px) {
-          display: flex;
-        }
-        @media (max-width: 576px) {
-          display: flex;
-          gap: 100px;
-        }
-        .view-work {
-          background-color: var(--secondary-color);
-          padding: 20px 50px;
-          border-radius: 3px;
-          border: none;
-          color: white;
-          font-size: 18px;
-          letter-spacing: 1px;
-          margin-right: 20px;
-          cursor: pointer;
-          @media (max-width: 576px) {
-            padding: 10px 20px;
-            font-size: 10px;
-          }
-        }
-
-        .view-work:hover {
-          border: 2px var(--secondary-color) solid;
-          background-color: var(--primary-color);
-          color: var(--secondary-color);
-          cursor: pointer;
-        }
-
         .download-cv {
           background-color: var(--primary-color);
           color: var(--secondary-color);
@@ -451,8 +420,10 @@
           letter-spacing: 1px;
           margin-right: 160px;
           margin-top: 20px;
+          text-align: center;
+
           @media (max-width:576px) {
-            padding: 10px;
+          padding: 10px;
             
           }
         }
@@ -465,7 +436,7 @@
       }
     }
   }
-}
+
 
 .services {
   background-color: var(--primary-color);
@@ -493,6 +464,12 @@
         width: 80%;
         margin: 0 auto;
         border-radius: 5px;
+      }
+      @media (min-width:320px) {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+       
         
       }
       
@@ -528,6 +505,13 @@
           font-weight: 600;
     
           }
+          @media (max-width:320px) {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 600;
+      
+            }
         }
         .card-dec {
           padding-left: 30px;
