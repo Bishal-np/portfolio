@@ -6,7 +6,7 @@ function Footer() {
     <footer className='footer'>
       <h2 className='logo'>BN.</h2>
       <div>
-        <p className='description'>this is one section</p>
+        <p className='description'>Follow Me</p>
         <div className="social-icons">
           <ul className='d-flex gap-5  align-items-center  justify-content-center fs-5 text-light icons'>
             <li><a href=""><i className="bi bi-facebook"></i></a></li>

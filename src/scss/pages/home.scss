@@ -450,24 +450,36 @@
     }
   }
   .my-details{
+
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     color: white;
+    gap: 100px;
     .intro{
       text-align: center;
       border: 1px solid gray;
-    }
-    .cv{
-      padding: 10px 20px;
-      background-color: var(--secondary-color);
-      border: none;
-      color: white;
-      border-radius: 3px;
-      &:hover{
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        border: 1px solid var(--secondary-color);
+      .cv{
+        padding: 10px 20px;
+        background-color: var(--secondary-color);
+        border: none;
+        color: white;
+        border-radius: 3px;
+        &:hover{
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          border: 1px solid var(--secondary-color);
+        }
       }
     }
+    .progress{
+      height: 30px;
+      width: 100%;
+      margin-top: 20px;
+      overflow: hidden;
+      
+    }
+    
 
   }
 }
