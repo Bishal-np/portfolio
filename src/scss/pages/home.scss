@@ -142,6 +142,221 @@
     }
   }
 }
+
+
+.about-section {
+  background-color: #303131; // Dark gray background
+  color: white;
+  padding: 5rem 0;
+
+  .heading {
+    font-size: 2.5rem;
+    color: #adabab; // Light gray text
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .intro {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid #4a4a4a;
+
+    .description {
+      color: #d1d1d1;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .cv {
+      background-color: #6c5ce7; // Purple accent
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken(#6c5ce7, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .skill {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid #4a4a4a;
+
+    h2 {
+      color: #adabab;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .progress {
+      height: 12px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+
+      &-bar {
+        border-radius: 6px;
+        background-color: #00b894; // Teal progress bars
+        position: relative;
+        overflow: visible;
+
+        &::after {
+          content: attr(aria-valuenow)'%';
+          position: absolute;
+          right: 5px;
+          top: -25px;
+          font-size: 0.75rem;
+          color: white;
+          background: rgba(0, 0, 0, 0.7);
+          padding: 2px 5px;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .form-label {
+      color: #d1d1d1;
+      margin-bottom: 0.5rem;
+      display: block;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .intro, .skill {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 3rem 0;
+
+    .intro, .skill {
+      padding: 1.5rem;
+    }
+  }
+}
+
+
+
+.services-section {
+  padding: 5rem 0;
+  background-color: var(--primary-color);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      .section-title {
+        font-size: 2.5rem;
+        color: #B5B2B2;
+        margin-bottom: 1rem;
+        font-weight: 700;
+
+        @media (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      .section-subtitle {
+        font-size: 1.1rem;
+        color: #B5B2B2;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-top: 4px solid var(--accent-color);
+
+        @media (max-width: 480px) {
+          padding: 1.5rem;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon-container {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1.5rem;
+          background-color: rgba(var(--accent-color), 0.1);
+          color: var(--accent-color);
+          font-size: 1.5rem;
+
+          .service-icon {
+            stroke-width: 1.5;
+          }
+        }
+
+        .service-title {
+          font-size: 1.3rem;
+          color: #2d3436;
+          margin-bottom: 1rem;
+          font-weight: 600;
+        }
+
+        .service-description {
+          color: #636e72;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 3rem 0;
+  }
+}
 .contact {
   background-color: var(--primary-color);
   padding-top: 80px;
@@ -355,195 +570,5 @@
         }
       }
     }
-  }
-}
-.about-section {
-  background-color: var(--secondary-color);
-  color: white;
-  
-  .intro {
-    padding: 20px;
-    
-    .cv {
-      background-color: var(--accent-color);
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: white;
-      transition: all 0.3s ease;
-      
-      &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      }
-    }
-  }
-  
-  .skill {
-    padding: 20px;
-    
-    .skill-item {
-      .progress {
-        background-color: rgba(255,255,255,0.1);
-        border-radius: 10px;
-        overflow: hidden;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    .intro, .skill {
-      padding: 15px;
-    }
-    
-    .skill-item {
-      margin-bottom: 15px !important;
-    }
-  }
-}
-
-.about-section {
-  background-color: #303131;
-
-  .about-me {
-    .heading {
-      text-align: center;
-      padding-top: 50px;
-      font-size: 45px;
-      line-height: 50px;
-      font-weight: 600;
-      color: #adabab;
-      padding-bottom: 50px;
-    }
-  }
-  .my-details {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    @media (max-width: 991px) {
-      display: block;
-      flex-direction: column;
-    }
-
-    .intro {
-      text-align: center;
-      border: 1px solid gray;
-      .cv {
-        padding: 10px 20px;
-        background-color: var(--secondary-color);
-        border: none;
-        color: white;
-        border-radius: 3px;
-        &:hover {
-          background-color: var(--primary-color);
-          color: var(--secondary-color);
-          border: 1px solid var(--secondary-color);
-        }
-      }
-    }
-    .progress {
-      height: 30px;
-      width: 90%;
-      margin-top: 20px;
-      overflow: hidden;
-    }
-  }
-}
-.services-section {
-  padding: 5rem 0;
-  background-color: var(--primary-color);
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-
-      .section-title {
-        font-size: 2.5rem;
-        color: #B5B2B2;
-        margin-bottom: 1rem;
-        font-weight: 700;
-
-        @media (max-width: 768px) {
-          font-size: 2rem;
-        }
-      }
-
-      .section-subtitle {
-        font-size: 1.1rem;
-        color: #B5B2B2;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-
-      @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-      }
-
-      .service-card {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-top: 4px solid var(--accent-color);
-
-        @media (max-width: 480px) {
-          padding: 1.5rem;
-        }
-
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .service-icon-container {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 1.5rem;
-          background-color: rgba(var(--accent-color), 0.1);
-          color: var(--accent-color);
-          font-size: 1.5rem;
-
-          .service-icon {
-            stroke-width: 1.5;
-          }
-        }
-
-        .service-title {
-          font-size: 1.3rem;
-          color: #2d3436;
-          margin-bottom: 1rem;
-          font-weight: 600;
-        }
-
-        .service-description {
-          color: #636e72;
-          line-height: 1.6;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    padding: 3rem 0;
   }
 }
