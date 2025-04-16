@@ -1,141 +1,147 @@
 .banner-section {
-    background-color: var(--primary-color);
-    .banner {
-      padding-top: 100px;
-      @media (max-width: 991px) {
-        flex-direction: column;
-      }
-      @media (max-width: 768px) {
-        flex-direction: column;
-      }
-      @media (max-width:576p) {
-        flex-direction: column;
-        
-      }
-      .banner-details {
-        @media (max-width: 991px) {
-          text-align: center;
-          
-        }
-        @media (max-width: 768px) {
-          text-align: center;
-        }
-        @media (max-width:576p) {
-          text-align: center;
-          
-        }
+  background-color: var(--primary-color);
   
-        .heading {
-          font-size: 70px;
-          font-weight: 600;
-          line-height: 88px;
-          color: #ffffff;
-  
-          @media (max-width: 991px) {
-            font-size: 50px;
-            font-weight: 500;
-            line-height: 34px;
-          }
-          @media (max-width: 768px) {
-             font-size: 50px;
-            font-weight: 500;
-            line-height: 34px;
-          }
-          @media (max-width: 576px) {
+  .banner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 0;
+
+    @media (max-width: 991px), 
+           (max-width: 768px),
+           (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    .banner-details {
+      flex: 1;
+      padding-right: 2rem;
+
+      @media (max-width: 991px),
+             (max-width: 768px),
+             (max-width: 576px) {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 2rem;
+      }
+
+      .heading {
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 88px;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 991px),
+               (max-width: 768px) {
+          font-size: 50px;
+          font-weight: 500;
+          line-height: 60px;
+        }
+        @media (max-width: 576px) {
           font-size: 30px;
-           font-weight: 500;
-           line-height: 30px;
-           margin-top: 30px;
-         }
+          font-weight: 500;
+          line-height: 40px;
+          margin-top: 30px;
         }
-        .animated-text{
-          .text{
-            position: relative;
-            color: var(--secondary-color);
-            font-size: 25px;
-            font-weight: 500;
-  
-            @media (max-width:576px) {
-              position: relative;
-              color: var(--secondary-color);
-              font-size: 15px;
-              font-weight: 500;
-              line-height: 30px;
-              
-            }
-          }
-          .text.first-text{
-            color: white;
-            margin-right: 10px;
-          }
-  
-          .text.sec-text::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: var(--primary-color);
-            border-left: 2px solid var(--secondary-color);
-            animation: animate 5s steps(12) infinite;
-          }
-          @keyframes animate{
-            40%, 60%{
-              left: 100%;
-            }
-            100%{
-              left: 0;
-            }
-          }
-        }
-        .hire-me {
-          padding: 20px 60px;
-          color: white;
-          border: none;
-          letter-spacing: 1px;
-          font-size: 18px;
-          margin-top: 50px;
-          border-radius: 3px;
-          background-color: var(--secondary-color);
-          @media (max-width: 991px) {
-            padding: 10px 30px;
-            color: white;
-            border: none;
-            letter-spacing: 1px;
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 100px;
-            border-radius: 3px;
-            background-color: var(--secondary-color);
-          }
+      }
+
+      .animated-text {
+        margin: 2rem 0;
+        
+        .text {
+          position: relative;
+          color: var(--secondary-color);
+          font-size: 25px;
+          font-weight: 500;
+
           @media (max-width: 576px) {
-            padding: 5px 10px;
-            color: white;
-            border: none;
-            font-size: 13px;
-            margin-top: 10px;
-            margin-bottom: 100px;
-            border-radius: 3px;
-            background-color: var(--secondary-color);
+            font-size: 15px;
+            line-height: 30px;
           }
         }
-        .hire-me:hover {
+
+        .first-text {
+          color: white;
+          margin-right: 10px;
+        }
+
+        .sec-text::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
           background-color: var(--primary-color);
-          border: 1px var(--secondary-color) solid;
+          border-left: 2px solid var(--secondary-color);
+          animation: animate 5s steps(12) infinite;
+        }
+      }
+
+      .hire-me {
+        padding: 20px 60px;
+        color: white;
+        border: none;
+        letter-spacing: 1px;
+        font-size: 18px;
+        margin-top: 50px;
+        border-radius: 3px;
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @media (max-width: 991px) {
+          padding: 10px 30px;
+          margin-top: 20px;
+          margin-bottom: 50px;
+        }
+        @media (max-width: 576px) {
+          padding: 8px 20px;
+          font-size: 13px;
+          margin-bottom: 30px;
+        }
+
+        &:hover {
+          background-color: var(--primary-color);
+          border: 1px solid var(--secondary-color);
           color: var(--secondary-color);
         }
       }
-      .banner-picture {
-        @media (max-width: 991px) {
-          height: 300px;
-        }
-        @media (max-width: 576px) {
-          height: 250px;
-        }
+    }
+
+    .banner-picture {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      @media (max-width: 991px) {
+        height: 300px;
+      }
+      @media (max-width: 576px) {
+        height: 250px;
       }
     }
   }
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
   .contact {
     background-color: var(--primary-color);
     padding-top: 80px;
