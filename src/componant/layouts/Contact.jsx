@@ -21,7 +21,7 @@ function Contact() {
       
       <div className="contact-card container">
         <div className="contact-info">
-          <h3 className='text-center'>Contact Info</h3>
+         
           <p className="location">
             <FaMapMarkerAlt className="icon" /> 
             Phedikhola-5 Syangja, Nepal
