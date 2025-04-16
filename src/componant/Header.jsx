@@ -27,7 +27,7 @@ function Header() {
       <div className="container">
         <div className="logo"><a href="/home">BN.</a></div>
         
-        {/* Responsive Toggle Button */}
+       
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -38,7 +38,7 @@ function Header() {
           <span className="navbar-toggler-icon" />
         </button>
         
-        {/* Responsive Menu */}
+       
         <div className={`menu-container ${isMenuOpen ? 'show' : ''}`}>
           <ul className="menu-items">
             {['home', 'about', 'services', 'experiences', 'blog', 'contact'].map((item) => (

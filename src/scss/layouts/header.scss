@@ -40,9 +40,9 @@
     cursor: pointer;
     display: none;
     z-index: 1001;
-    position: relative; // Added to prevent any movement
-    width: 24px; // Fixed width
-    height: 24px; // Fixed height
+    position: relative; 
+    width: 24px; 
+    height: 24px; 
 
     .navbar-toggler-icon {
       display: block;
@@ -62,21 +62,19 @@
         height: 2px;
         background-color: var(--secondary-color);
         left: 0;
-        transition: none; // Remove transitions
+        transition: none; 
       }
-
       &::before {
         top: -6px;
       }
-
       &::after {
         top: 6px;
       }
     }
 
-    // Remove any animation states
-    &[aria-expanded="true"] .navbar-toggler-icon {
-      background-color: var(--secondary-color); // Keep it visible
+   
+    &[aria-expanded="ture"] .navbar-toggler-icon {
+      background-color: var(--secondary-color); 
     }
   }
 
@@ -123,7 +121,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: right 0.3s ease; // Only menu slides in
+     
       z-index: 1000;
 
       &.show {
