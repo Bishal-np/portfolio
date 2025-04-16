@@ -6,7 +6,7 @@
   padding: 2rem 0;
   background-color: var(--primary-color);
   z-index: 1000;
-  transition: all 0.3s ease;
+  
 
   &.scrolled {
     background-color: #252525;
@@ -52,8 +52,7 @@
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translateY(-50%);
-      transition: none; // Explicitly remove any transitions
+      transition: none; 
 
       &::before,
       &::after {
