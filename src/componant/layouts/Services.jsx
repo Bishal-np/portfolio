@@ -1,42 +1,57 @@
-import React from 'react'
+import React from 'react';
+import { FiCode, FiLayers, FiSmartphone, FiDatabase, FiSearch, FiTrendingUp } from 'react-icons/fi';
 
 function Services() {
-    return (
-        <>
-            <section className="services" id='services'>
-                <div className="services-section container">
-                    <h2 className='text-center pt-5  srv-heading '> services </h2>
-                    <p className='text-center service-sub-heading pb-5'>
-                        Modern, responsive front-end development using React.js for fast, scalable web applications and custom WordPress design and development, from sleek themes to seamless functionality
-                    </p>
-                    <div className="row gy-4">
-                        <div className="col-lg-6 col-md-12">
-                            <div className="card text-bg-success">
-                                <div className="card-body ">
-                                    <div className=' icon'>
-                                    <i class="bi bi-front"></i>
-                                    </div>
-                                    <h5 className="card-title card-heading">Front-End Development</h5>
-                                    <p className="card-text card-dec">I craft fast, modern websites using HTML, CSS, JS, jQuery & React. With clean code and React Hooks, I build responsive, interactive sites for any device. Let’s create!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12">
-                            <div className="card text-bg-primary">
-                                <div className="card-body ">
-                                    <div className=' icon'>
-                                    <i class="bi bi-wordpress"></i>
-                                    </div>
-                                    <h5 className="card-title card-heading">Wordpress Development</h5>
-                                    <p className="card-text card-dec">I design fast, responsive WordPress websites with custom themes, seamless UX, and easy-to-manage CMS. Let's build your perfect site together!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+  const services = [
+    {
+      icon: <FiCode className="service-icon" />,
+      title: "Front-End Development",
+      description: "Modern websites built with React, HTML5, CSS3, and JavaScript. Clean, efficient code with responsive design.",
+      color: "#6c5ce7"
+    },
+    {
+      icon: <FiLayers className="service-icon" />,
+      title: "WordPress Development",
+      description: "Custom WordPress themes and plugins. Fast, secure, and SEO-friendly CMS solutions.",
+      color: "#00b894"
+    },
+    {
+      icon: <FiSmartphone className="service-icon" />,
+      title: "Responsive Design",
+      description: "Mobile-first approach ensuring perfect display on all devices from desktop to smartphone.",
+      color: "#0984e3"
+    },
+   
+  ];
+
+  return (
+    <section className="services-section" id="services">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">My Services</h2>
+          <p className="section-subtitle">
+            Modern, responsive development solutions tailored to your business needs
+          </p>
+        </div>
+
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div 
+              className="service-card" 
+              key={index}
+              style={{ '--accent-color': service.color }}
+            >
+              <div className="service-icon-container">
+                {service.icon}
+              </div>
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Services
+export default Services;

@@ -357,72 +357,49 @@
     }
   }
 }
-.services {
-  background-color: var(--primary-color);
-  .services-section {
-    .srv-heading {
-      font-size: 45px;
-      color: rgb(173, 171, 171);
-      @media (max-width: 576px) {
-        font-size: 25px;
+.about-section {
+  background-color: var(--secondary-color);
+  color: white;
+  
+  .intro {
+    padding: 20px;
+    
+    .cv {
+      background-color: var(--accent-color);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       }
     }
-    .service-sub-heading {
-      color: rgb(138, 136, 136);
-      @media (max-width: 576px) {
-        font-size: 13px;
-        width: 80%;
-        margin: 0 auto;
+  }
+  
+  .skill {
+    padding: 20px;
+    
+    .skill-item {
+      .progress {
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        overflow: hidden;
       }
     }
-    .card {
-      border-radius: 10px;
-      @media (max-width: 991px) {
-        width: 100%;
-        height: fit-content;
-      }
+  }
+}
 
-      .card-body {
-        padding: 50px;
-        @media (max-width: 576px) {
-          padding: 60px;
-        }
-        .icon {
-          color: rgb(9, 9, 182);
-          font-size: 50px;
-          text-align: center;
-
-          @media (max-width: 576px) {
-            font-size: 40px;
-            color: rgb(9, 9, 182);
-            text-align: center;
-            margin-top: 20px;
-          }
-        }
-        .card-heading {
-          margin-top: 20px;
-          font-size: 25px;
-          font-weight: 600;
-          line-height: 38px;
-          text-align: center;
-          color: var(--secondary-color);
-
-          @media (max-width: 991px) {
-            margin-top: 20px;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 25px;
-            text-align: center;
-          }
-        }
-      }
-      .card-dec {
-        text-align: center;
-        color: rgb(222, 217, 217);
-        @media (max-width: 991px) {
-          font-size: 13px;
-        }
-      }
+@media (max-width: 768px) {
+  .about-section {
+    .intro, .skill {
+      padding: 15px;
+    }
+    
+    .skill-item {
+      margin-bottom: 15px !important;
     }
   }
 }
@@ -474,5 +451,106 @@
       margin-top: 20px;
       overflow: hidden;
     }
+  }
+}
+
+
+.services-section {
+  padding: 5rem 0;
+  background-color:var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color:#B5B2B2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #B5B2B2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background:rgb(222, 220, 220);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid var(--accent-color);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: rgba(var(--accent-color), 0.1);
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+.service-icon {
+  stroke-width: 1.5;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-description {
+  color: #636e72;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 3rem 0;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
   }
 }
