@@ -148,12 +148,13 @@
   padding: 5rem 0;
 
   .heading {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #adabab; 
-    font-weight: 600;
-    margin-bottom: 3rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
     text-transform: capitalize;
     letter-spacing: 1px;
+    text-decoration: underline var(--secondary-color)5% ;
 
     @media (max-width: 768px) {
       font-size: 2rem;
@@ -272,10 +273,11 @@
       margin-bottom: 3rem;
 
       .section-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         color: #B5B2B2;
         margin-bottom: 1rem;
-        font-weight: 700;
+        font-weight: 500;
+        text-decoration: underline var(--secondary-color)5% ;
 
         @media (max-width: 768px) {
           font-size: 2rem;
@@ -358,10 +360,11 @@
   min-height: 100vh;
 
   h2 {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 2.3rem;
     color: rgb(181, 178, 178);
     margin-bottom: 15px;
+    text-decoration: underline var(--secondary-color)5% ;
 
     @media (max-width: 991px) {
       font-size: 32px;
