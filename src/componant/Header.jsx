@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className={`navbar navbar-expand-lg py-4 bg-body-dark ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="logo"><a href="/home">BN.</a></div>
         
@@ -39,8 +39,8 @@ function Header() {
         </button>
         
         {/* Responsive Menu */}
-        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
-          <ul className="mb-0 ms-auto gap-4 align-items-center menu-items" id="menu_list">
+        <div className={`menu-container ${isMenuOpen ? 'show' : ''}`}>
+          <ul className="menu-items">
             {['home', 'about', 'services', 'experiences', 'blog', 'contact'].map((item) => (
               <li key={item} onClick={closeMenu}>
                 <a href={`#${item}`}>
