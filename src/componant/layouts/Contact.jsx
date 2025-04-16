@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <section className="contact" id='contact'>
-      <h2 className='text-center pt-5'>Let's Talk!</h2>
+      <h2 className='text-center pt-5'>Contact Me </h2>
       <p className='text-center contact-p'>
         Have a question or want to work together? Feel free to reach out!
       </p>
