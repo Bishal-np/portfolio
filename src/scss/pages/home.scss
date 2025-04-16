@@ -142,8 +142,6 @@
     }
   }
 }
-
-
 .about-section {
   background-color: #303131; // Dark gray background
   color: white;
@@ -151,10 +149,10 @@
 
   .heading {
     font-size: 2.5rem;
-    color: #adabab; // Light gray text
+    color: #adabab; 
     font-weight: 600;
     margin-bottom: 3rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
 
     @media (max-width: 768px) {
@@ -177,7 +175,7 @@
     }
 
     .cv {
-      background-color: #6c5ce7; // Purple accent
+      background-color: var(--secondary-color);
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
@@ -188,9 +186,9 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: darken(#6c5ce7, 10%);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        opacity: 0.5;
+       
       }
 
       svg {
@@ -220,7 +218,7 @@
 
       &-bar {
         border-radius: 6px;
-        background-color: #00b894; // Teal progress bars
+        background-color: var(--secondary-color);
         position: relative;
         overflow: visible;
 
@@ -260,9 +258,6 @@
     }
   }
 }
-
-
-
 .services-section {
   padding: 5rem 0;
   background-color: var(--primary-color);
