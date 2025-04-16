@@ -15,7 +15,7 @@ function Banner() {
 
   return (
     <section className="banner-section" id='banner'>
-      <div className="container banner">
+      <div className="container banner ">
         <div className="banner-details">
           <h1 className='heading'>Hey, I'm Bishal</h1>
 
