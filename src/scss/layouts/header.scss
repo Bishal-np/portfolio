@@ -15,18 +15,17 @@ header {
     color: var(--secondary-color);
     z-index: 1001; // Ensure logo stays above mobile menu
   }
-
   .navbar-toggler {
     border: none;
     background: transparent;
     padding: 0.5rem;
     z-index: 1001;
     display: none; // Hidden by default on desktop
-
+  
     @media (max-width: 991px) {
       display: block; // Show on mobile
     }
-
+  
     .navbar-toggler-icon {
       background-color: var(--secondary-color);
       width: 24px;
@@ -34,7 +33,6 @@ header {
       display: block;
       position: relative;
       
-
       &::before,
       &::after {
         content: '';
@@ -43,22 +41,26 @@ header {
         height: 2px;
         background-color: var(--secondary-color);
         left: 0;
-      
       }
-
+  
       &::before {
-        transform: translateY(-6px);
+        top: -6px;
       }
-
+  
       &::after {
-        transform: translateY(6px);
+        top: 6px;
       }
     }
-
+  
     &[aria-expanded="true"] .navbar-toggler-icon {
       background: transparent;
-
-     
+      
+      &::before,
+      &::after {
+        // Remove any transforms that create the X animation
+        transform: none;
+        top: 0;
+      }
     }
   }
 
