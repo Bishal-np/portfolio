@@ -15,18 +15,16 @@ function Banner() {
               sequence={[
                 'Front-End Developer',
                 1000,
-                'WordPress Specialist',
+                'WordPress Designer',
                 1000,
-                'UI/UX Enthusiast',
-                1000,
-                'Web Designer',
+                'Freelancer',
                 1000
               ]}
               wrapper="span"
               speed={50}
               deletionSpeed={60}
               style={{ 
-                fontSize: '1.5rem',
+                fontSize: '1.2rem',
                 display: 'inline-block',
                 color: '#3498db' 
               }}
