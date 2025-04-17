@@ -8,6 +8,7 @@ import "../src/scss/base/variable.scss"
 import "../src/scss/layouts/footer.scss"
 import "../src/scss/layouts/header.scss"
 import App from './App.jsx'
+import { TypeAnimation } from 'react-type-animation'
 
 
 

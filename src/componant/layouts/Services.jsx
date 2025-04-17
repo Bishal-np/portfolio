@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiCode, FiLayers, FiSmartphone, FiDatabase, FiSearch, FiTrendingUp } from 'react-icons/fi';
+import { FiCode, FiLayers, FiSmartphone, } from 'react-icons/fi';
 
 function Services() {
   const services = [
@@ -21,7 +21,7 @@ function Services() {
       description: "Mobile-first approach ensuring perfect display on all devices from desktop to smartphone.",
       color: "#0984e3"
     },
-   
+
   ];
 
   return (
@@ -36,8 +36,8 @@ function Services() {
 
         <div className="services-grid">
           {services.map((service, index) => (
-            <div 
-              className="service-card" 
+            <div
+              className="service-card"
               key={index}
               style={{ '--accent-color': service.color }}
             >

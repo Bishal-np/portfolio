@@ -1,29 +1,40 @@
-import React, { useEffect } from 'react';
 import "../../scss/pages/home.scss";
 import Logo from "../../assets/banner.png";
+import { TypeAnimation } from 'react-type-animation';
 
 function Banner() {
-  useEffect(() => {
-    const text = document.querySelector(".sec-text");
-    const textLoad = () => {
-      setTimeout(() => {
-        if (text) text.textContent = "Front End Developer";
-      }, 0);
-    };
-    textLoad();
-  }, []);
-
   return (
     <section className="banner-section" id='banner'>
-      <div className="container banner ">
+      <div className="container banner">
         <div className="banner-details">
           <h1 className='heading'>Hi, I'm Bishal</h1>
 
           <div className="animated-text">
-            <span className="text first-text"></span>
-            <span className="text sec-text"></span>
+            
+            <TypeAnimation
+              sequence={[
+                'Front-End Developer',
+                1000,
+                'WordPress Specialist',
+                1000,
+                'UI/UX Enthusiast',
+                1000,
+                'Web Designer',
+                1000
+              ]}
+              wrapper="span"
+              speed={50}
+              deletionSpeed={60}
+              style={{ 
+                fontSize: '1.5rem',
+                display: 'inline-block',
+                color: '#3498db' 
+              }}
+              repeat={Infinity}
+            />
           </div>
-         <p className="banner-heading-sub">Building Modern, Responsive & Engaging Websites</p>
+          
+          <p className="banner-heading-sub">Building Modern, Responsive & Engaging Websites</p>
           <button className='hire-me'>Hire Me</button>
         </div>
         <div className="banner-picture">
