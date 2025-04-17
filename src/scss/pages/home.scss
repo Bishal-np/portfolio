@@ -95,6 +95,19 @@
           }
         }
       }
+
+      .banner-heading-sub{
+        color: white;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-top: 14px;
+        @media (max-width:991px) {
+          font-size: 15px;
+          line-height: 20px;
+          
+        }
+      }
       .hire-me {
         padding: 20px 60px;
         color: white;

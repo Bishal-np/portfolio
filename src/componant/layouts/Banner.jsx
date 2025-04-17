@@ -17,12 +17,13 @@ function Banner() {
     <section className="banner-section" id='banner'>
       <div className="container banner ">
         <div className="banner-details">
-          <h1 className='heading'>Hey, I'm Bishal</h1>
+          <h1 className='heading'>Hi, I'm Bishal</h1>
 
           <div className="animated-text">
-            <span className="text first-text">I'm </span>
+            <span className="text first-text"></span>
             <span className="text sec-text"></span>
           </div>
+         <p className="banner-heading-sub">Building Modern, Responsive & Engaging Websites</p>
           <button className='hire-me'>Hire Me</button>
         </div>
         <div className="banner-picture">
