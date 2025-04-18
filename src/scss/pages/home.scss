@@ -194,6 +194,10 @@
       margin-bottom: 1.5rem;
       font-size: 1.1rem;
       text-align: center;
+      @media (max-width:576px) {
+        font-size: 0.7rem;
+        
+      }
     }
 
     .cv {
@@ -238,9 +242,13 @@
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 6px;
       margin-bottom: 1.5rem;
+      @media (max-width:576px) {
+
+        
+      }
 
       &-bar {
-        border-radius: 6px;
+        border-radius: 10px;
         background-color: var(--secondary-color);
         position: relative;
         overflow: visible;
@@ -264,6 +272,7 @@
       margin-bottom: 0.5rem;
       display: block;
       font-size: 0.95rem;
+
     }
   }
 
@@ -275,7 +284,8 @@
   }
 
   @media (max-width: 576px) {
-    padding: 3rem 0;
+    padding: 1rem 0;
+    margin-bottom: 0;
 
     .intro,
     .skill {
