@@ -122,7 +122,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-left: var(--secondary-color);
+     
      
       z-index: 1000;
 
@@ -147,6 +147,7 @@
   @media (max-width: 576px) {
     .menu-container {
       width: 40%;
+      border-left: var(--secondary-color) solid 1px;
     }
   }
 }
