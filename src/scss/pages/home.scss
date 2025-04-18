@@ -175,12 +175,12 @@
       margin-bottom: 2rem;
     }
   }
-  .row-xll {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 40px;
-   
+
+  .xll{
+    display: flex;
+    gap: 10px;
   }
+  
 
   .intro {
     padding: 2rem;
@@ -195,7 +195,7 @@
       font-size: 1.1rem;
       text-align: center;
       @media (max-width:576px) {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         
       }
     }
@@ -325,12 +325,7 @@
         margin: 0 auto;
       }
     }
-    .row-xlll {
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 15px;
-      padding: 40px;
-     
-    }
+   
 
     .services-grid {
       display: grid;

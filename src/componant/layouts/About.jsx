@@ -5,10 +5,10 @@ function About() {
   return (
     <section className="about-section py-5" id='about'>
       <div className="container">
-      <div className="row row-xll ">
+     
         <h2 className="heading text-center mb-5">About Me</h2>
        
-
+          <div className="xll">
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className="intro">
               <p className="description">
@@ -55,12 +55,13 @@ function About() {
               </div>
             </div>
           </div>
+          </div>
 
        
 
 
       </div>
-      </div>
+     
 
     </section>
   );
