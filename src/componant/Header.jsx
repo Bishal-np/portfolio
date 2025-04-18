@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../scss/layouts/header.scss";
+import "../../src/assets/banner.png"
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,6 +42,7 @@ function Header() {
        
         <div className={`menu-container ${isMenuOpen ? 'show' : ''}`}>
           <ul className="menu-items">
+            <img  className='responsive-image' src="../../src/assets/banner.png" alt=""/>
             {['home', 'about', 'services', 'experiences', 'blog', 'contact'].map((item) => (
               <li key={item} onClick={closeMenu}>
                 <a href={`#${item}`}>
