@@ -23,6 +23,7 @@
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
         font-weight: 600;
+        text-decoration: underline var(--secondary-color) 3px ;
       }
   
       .social-icons {
@@ -55,7 +56,7 @@
   
       .copy-right {
         .copy-right-section {
-          border-top: 1px solid rgba(174, 172, 172, 0.5);
+          border-top: 1px solid var(--secondary-color);
           padding-top: 1rem;
           max-width: 1200px;
           margin: 0 auto;

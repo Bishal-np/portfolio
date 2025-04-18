@@ -27,14 +27,15 @@ function Services() {
   return (
     <section className="services-section" id="services">
       <div className="container">
+      <div className="row-xlll">
         <div className="section-header">
           <h2 className="section-title">My Services</h2>
           <p className="section-subtitle">
             Modern, responsive development solutions tailored to your business needs
           </p>
         </div>
-
-        <div className="services-grid">
+       
+         <div className="services-grid">
           {services.map((service, index) => (
             <div
               className="service-card"
@@ -49,6 +50,9 @@ function Services() {
             </div>
           ))}
         </div>
+
+         </div>
+      
       </div>
     </section>
   );
