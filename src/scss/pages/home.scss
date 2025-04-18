@@ -179,6 +179,7 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 40px;
+   
   }
 
   .intro {
@@ -318,6 +319,7 @@
       background: rgba(0, 0, 0, 0.2);
       border-radius: 15px;
       padding: 40px;
+     
     }
 
     .services-grid {
@@ -424,6 +426,7 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 40px;
+    border:  0.5px solid var(--secondary-color);
 
     @media (max-width: 991px) {
       flex-direction: column;
