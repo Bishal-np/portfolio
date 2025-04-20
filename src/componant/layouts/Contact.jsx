@@ -54,9 +54,9 @@ function Contact() {
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="WhatsApp">
-                  <FaWhatsapp className="icon" />
-                </a>
+              <a href="https://wa.me/96565957766" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+  <FaWhatsapp className="icon" />
+</a>
               </li>
             </ul>
           </div>
