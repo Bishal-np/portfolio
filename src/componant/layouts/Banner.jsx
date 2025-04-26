@@ -26,7 +26,7 @@ function Banner() {
               style={{ 
                 fontSize: '1.2rem',
                 display: 'inline-block',
-                color: '#3498db' 
+                color: '#25D366' 
               }}
               repeat={Infinity}
             />

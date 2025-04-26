@@ -176,15 +176,13 @@
     }
   }
 
-  .xll{
+  .xll {
     display: flex;
-    gap: 10px; 
-    @media (max-width:991px) {
+    gap: 10px;
+    @media (max-width: 991px) {
       display: block;
-      
     }
   }
-  
 
   .intro {
     padding: 2rem;
@@ -198,9 +196,8 @@
       margin-bottom: 1.5rem;
       font-size: 1.1rem;
       text-align: center;
-      @media (max-width:576px) {
+      @media (max-width: 576px) {
         font-size: 1rem;
-        
       }
     }
 
@@ -216,7 +213,6 @@
       align-items: center;
       transition: all 0.3s ease;
       justify-content: center;
-    
 
       &:hover {
         transform: scale(1.1);
@@ -246,9 +242,7 @@
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 6px;
       margin-bottom: 1.5rem;
-      @media (max-width:576px) {
-
-        
+      @media (max-width: 576px) {
       }
 
       &-bar {
@@ -276,7 +270,6 @@
       margin-bottom: 0.5rem;
       display: block;
       font-size: 0.95rem;
-
     }
   }
 
@@ -329,7 +322,6 @@
         margin: 0 auto;
       }
     }
-   
 
     .services-grid {
       display: grid;
@@ -435,7 +427,7 @@
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 40px;
-    border:  0.5px solid var(--secondary-color);
+    border: 0.5px solid var(--secondary-color);
 
     @media (max-width: 991px) {
       flex-direction: column;
@@ -455,7 +447,6 @@
         width: 100%;
         margin-bottom: 40px;
         order: 2;
-      
       }
 
       h3 {
@@ -602,7 +593,7 @@
         cursor: pointer;
         transition: all 0.3s;
         text-transform: uppercase;
-
+       
         &:hover {
           background-color: var(--secondary-color);
           transform: scale(1.1);
