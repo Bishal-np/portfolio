@@ -474,7 +474,7 @@
 
         @media (max-width: 991px) {
           justify-content: center;
-          
+
         }
 
         .icon {
@@ -605,6 +605,11 @@
         @media (max-width: 576px) {
           padding: 12px;
           font-size: 14px;
+          padding: 8px 17px;
+          width: auto;
+          margin: 0 auto;
+          display: block;
+         
         }
       }
     }
