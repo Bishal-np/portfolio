@@ -3,6 +3,10 @@
     padding: 2rem 0;
     text-align: center;
     padding-top: 210px;
+    @media (max-width:576px) {
+      display: none;
+      
+    }
   
     .footer-content {
       max-width: 1200px;

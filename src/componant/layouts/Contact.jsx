@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
+import {
   FaFacebook, FaLinkedin, FaGithub, FaWhatsapp,
-  FaMapMarkerAlt, FaEnvelope, FaPhone 
+  FaMapMarkerAlt, FaEnvelope, FaPhone
 } from 'react-icons/fa';
 import "../../scss/pages/home.scss";
 
@@ -18,12 +18,12 @@ function Contact() {
       <p className='text-center contact-p'>
         Have a question or want to work together? Feel free to reach out!
       </p>
-      
+
       <div className="contact-card container">
         <div className="contact-info">
-         
+
           <p className="location">
-            <FaMapMarkerAlt className="icon" /> 
+            <FaMapMarkerAlt className="icon" />
             Phedikhola-5 Syangja, Nepal
           </p>
           <p className="gmail">
@@ -34,7 +34,7 @@ function Contact() {
             <FaPhone className="icon" />
             +977 9702831539
           </p>
-          
+
           <div className="follow-me">
             <h3 className='text-center'>Follow Me</h3>
             <ul className='d-flex gap-3 follow fs-3 justify-content-center align-items-center text-light'>
@@ -54,48 +54,48 @@ function Contact() {
                 </a>
               </li>
               <li>
-              <a href="https://wa.me/96565957766" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-  <FaWhatsapp className="icon" />
-</a>
+                <a href="https://wa.me/96565957766" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp className="icon" />
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <input 
-              type="text" 
-              id="name" 
-              placeholder="Full Name" 
-              required 
-              className="name" 
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              required
+              className="name"
             />
-            <input 
-              type="number" 
-              id='number' 
-              placeholder='Phone Number' 
-              required 
-              className='number' 
+            <input
+              type="number"
+              id='number'
+              placeholder='Phone Number'
+              required
+              className='number'
             />
-            <input 
-              type="email" 
-              id='email' 
-              placeholder='Email Address' 
-              required 
-              className='email' 
+            <input
+              type="email"
+              id='email'
+              placeholder='Email Address'
+              required
+              className='email'
             />
             <div className="message">
-              <textarea 
-                name="message" 
-                id="message" 
-                className="message-area" 
+              <textarea
+                name="message"
+                id="message"
+                className="message-area"
                 placeholder="Type your message here"
                 required
               ></textarea>
             </div>
           </div>
-          
+
           <button type="submit" className="send-message">
             Send Message
           </button>

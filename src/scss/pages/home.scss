@@ -454,6 +454,8 @@
       @media (max-width: 991px) {
         width: 100%;
         margin-bottom: 40px;
+        order: 2;
+      
       }
 
       h3 {
@@ -525,6 +527,7 @@
 
       @media (max-width: 991px) {
         width: 100%;
+        order: 1;
       }
 
       .form-group {
